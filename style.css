@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.section1 {
+  background-color: blueviolet;
+  width: 200px;
+  height: 100vh;
+  padding-left: 20px;
+  padding-top: 10px;
+  z-index: 10px;
+  position: fixed;
+}
+
+.navbar nav li {
+  list-style: none;
+  padding: 20px 10px 10px 10px;
+}
+.navbar {
+  margin-top: 20px;
+  display: block;
+}
+.navbar nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.rooms {
+  position: absolute;
+  top: 2%;
+  left: 20%;
+  display: flex;
+}
+.bed_icon__ {
+  color: white;
+  padding: 0px 10px 0px 0px;
+}
+/* ........................ sidebar icoo */
+.sidemenu {
+  color: white;
+  float: right;
+  margin-right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+/* ........................ rooms cards ............... */
+.main_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card_one_vocant {
+  background-color: green;
+  width: 200px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 10px 0px 10px;
+}
+.card_one_vocant h1 {
+  font-size: 20px;
+  font-weight: 100;
+}
+.card_one_vocant h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
+.card_one_occupied {
+  background-color: red;
+  width: 200px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 10px 0px 10px;
+}
+.card_one_occupied h1 {
+  font-size: 20px;
+  font-weight: 100;
+}
+.card_one_occupied h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
+.card_one_incleaning {
+  background-color: orange;
+  width: 200px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 10px 0px 10px;
+}
+.card_one_incleaning h1 {
+  font-size: 20px;
+  font-weight: 100;
+}
+.card_one_incleaning h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
+.bed_icon {
+  font-size: 60px;
+}
+
+/* .......................................... ................................................media query for mobile ............... */
+@media only screen and (max-width: 600px) {
+  .section1 {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100vh;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .main_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    bottom: 20%;
+    z-index: -1;
+  }
+  .card_one_incleaning {
+    background-color: orange;
+    width: 150px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+  }
+  .card_one_occupied {
+    background-color: red;
+    width: 150px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+  }
+  .card_one_vocant {
+    background-color: green;
+    width: 150px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+  }
+  .rooms {
+    position: absolute;
+    top: 2%;
+    left: 25%;
+
+    display: flex;
+  }
+}
+
+/* ................................................................ media query for big mobile ........ */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .section1 {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100vh;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .main_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    bottom: 20%;
+    z-index: -1;
+  }
+  .card_one_incleaning {
+    background-color: orange;
+    width: 150px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+  }
+  .card_one_occupied {
+    background-color: red;
+    width: 150px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+  }
+  .card_one_vocant {
+    background-color: green;
+    width: 150px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+  }
+  .rooms {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+
+    display: flex;
+  }
+}
+
+/* ............................. media query for tablet  */
+@media (min-width: 820px) and (max-width: 1180px) {
+}
